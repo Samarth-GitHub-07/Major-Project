@@ -23,7 +23,6 @@ const user=require('./routes/user.js')
 const passport=require('passport');
 const LocalStrategy=require('passport-local');
 
-// const mongoURL='mongodb://127.0.0.1:27017/wanderlust'
 const dbUrl=process.env.ATLASDB_URL;
 main().then(()=>{
     console.log('connected to db');
